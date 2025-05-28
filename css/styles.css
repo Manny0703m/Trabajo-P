@@ -361,3 +361,13 @@ h3 {
 .redes-sociales i {
     font-size: 2rem; 
 }
+
+.foto-MIA {
+    display: block;
+    margin: 2rem auto 1rem auto;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
