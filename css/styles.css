@@ -345,3 +345,19 @@ h3 {
     scroll-snap-stop: always;
 }
 
+.redes-sociales a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 3rem; 
+    border-radius: 40px;   
+    font-size: 1.5rem;    
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.redes-sociales i {
+    font-size: 2rem; 
+}
