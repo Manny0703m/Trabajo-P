@@ -341,5 +341,7 @@ h3 {
 
 .boton-whatsapp i {
     font-size: 1.4rem;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
