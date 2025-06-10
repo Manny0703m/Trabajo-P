@@ -379,7 +379,7 @@ h3 {
     border-radius: 12px;
     padding: 1.5rem;
     margin: 1.5rem auto;
-    max-width: 700px;
+    max-width: 950px;
     transition: box-shadow 0.3s, background 0.3s, border-color 0.3s, transform 0.3s;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
