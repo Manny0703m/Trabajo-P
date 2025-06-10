@@ -1,7 +1,7 @@
 :root {
   --blanco: #ffffff;
-  --obscuro: #0b1f3a;
-  --primario: #0b1f3a;
+  --obscuro: #006eff;
+  --primario: #006eff;
   --secundario: #0d3c66;
   --gris: #5a6a7a;
   --grisClaro: #e6ecf3;
@@ -78,7 +78,7 @@ body {
 }
 
 .sombra {
-  box-shadow: 0px 5px 15px 0px rgba(11, 31, 58, 0.3);
+  box-shadow: 0px 5px 15px 0px rgba(0, 110, 255, 0.3);
   background-color: var(--blanco);
   padding: 2rem;
   border-radius: 1rem;
