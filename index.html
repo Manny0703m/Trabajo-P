@@ -44,8 +44,7 @@
 
     <main class="contenedor sombra">
         <h2>Mis servicios</h2>
-
-        <div class="servicios">
+        <div class="servicios card-apartado">
             <section class="servicio">
                 <h3>¿Quién soy y que me motiva?</h3>
                 <div class="iconos">
@@ -103,10 +102,10 @@
             </section>
         </div>
     </main>
-<header>
-    <img src="img/ZC5qcGc.webp" alt="Foto de perfil" class="foto-perfil">
-</header>
-    <section class="contenedor sombra">
+    <header>
+        <img src="img/ZC5qcGc.webp" alt="Foto de perfil" class="foto-perfil card-apartado">
+    </header>
+    <section class="contenedor sombra card-apartado">
         <h2>Sobre mí</h2>
         <p>Estudiante de Ingeniería en Sistemas Computacionales, 
         con carrera técnica en soporte y mantenimiento de equipo de cómputo. 
@@ -116,7 +115,7 @@
         Conocimientos básicos en Java, C++ y gestión de redes.</p>
     </section>
 
-    <section class="contenedor sombra">
+    <section class="contenedor sombra card-apartado">
         <h2>Educación</h2>
         <p><strong>Universidad Politécnica de Aguascalientes</strong> (2022 - presente)<br>
         Ing. en Sistemas Computacionales, 7° cuatrimestre</p>
@@ -124,13 +123,13 @@
         Carrera técnica en soporte y mantenimiento de equipo de cómputo</p>
     </section>
 
-    <section class="contenedor sombra">
+    <section class="contenedor sombra card-apartado">
         <h2>Experiencia laboral</h2>
         <p><strong>EATON (septiembre 2024 - presente)</strong><br>
         Becario en IT Services. Soporte técnico a empleados, gestión de tickets (ServiceNow), administración de Active Directory, configuración y entrega de equipos de cómputo.</p>
     </section>
 
-    <section class="contenedor sombra">
+    <section class="contenedor sombra card-apartado">
         <h2>Habilidades</h2>
         <p><strong>Personales:</strong> Comunicación efectiva, trabajo bajo presión, facilidad de palabra, actitud proactiva</p>
         <p><strong>Técnicas:</strong></p>
@@ -142,7 +141,7 @@
         </ul>
     </section>
 
-    <section class="contenedor sombra">
+    <section class="contenedor sombra card-apartado">
         <h2>Certificaciones</h2>
         <ul>
             <li>CCNA1</li>
@@ -155,12 +154,7 @@
         </ul>
     </section>
 
-    <section class="contenedor sombra">
-        <h2>Perfil profesional</h2>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/manuel-alejandro-hernandez-de-la-riva-701b06129/" target="_blank">manuel-alejandro-hernandez-de-la-riva</a></p>
-    </section>
-
-    <section>
+    <section class="card-apartado">
         <h2>Contacto</h2>
         <form class="formulario">
             <fieldset>
@@ -189,10 +183,27 @@
             </fieldset>
         </form>
     </section>
-<img src="img/YnJpZCZ3PTc0MA.webp" alt="Imagen de portada" class="contenido-manny">
+    <img src="img/YnJpZCZ3PTc0MA.webp" alt="Imagen de portada" class="contenido-manny card-apartado">
     <footer>
         <p>Todos los derechos reservados ISC Manuel Alejandro Hernández De La Riva</p>
     </footer>
+    <script>
+        // Animación de aparición para los apartados
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card-apartado');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('aparece');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
 </body>
 
 </html>

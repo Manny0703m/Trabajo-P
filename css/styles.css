@@ -1,7 +1,7 @@
 :root {
   --blanco: #ffffff;
-  --obscuro: #083774;
-  --primario: #073168;
+  --obscuro: #006eff;
+  --primario: #006eff;
   --secundario: #0088ff;
   --gris: #5a6a7a;
   --grisClaro: #e6ecf3;
@@ -440,4 +440,52 @@ div[style*="justify-content: center"] a:hover,
 
 .iconos-sociales-grandes a:hover {
     transform: scale(1.08);
+}
+
+.card-apartado {
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.10), 0 1.5px 6px rgba(0,0,0,0.07);
+    margin: 2.5rem auto;
+    padding: 2.5rem 2.5rem;
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+    max-width: 1000px;
+}
+
+.card-apartado.aparece {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.card-apartado h2, .card-apartado h3 {
+    color: #0d3c66;
+    margin-bottom: 1.2rem;
+}
+
+.card-apartado ul, .card-apartado p {
+    font-size: 1.7rem;
+    color: #222;
+}
+
+.card-apartado .formulario {
+    background: #f5faff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 2rem 1.5rem;
+}
+
+.card-apartado img.foto-perfil,
+.card-apartado img.contenido-manny {
+    box-shadow: 0 6px 32px rgba(0,0,0,0.10), 0 1.5px 6px rgba(0,0,0,0.07);
+    border-radius: 1.5rem;
+    margin: 2.5rem auto;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .card-apartado {
+        padding: 1.2rem 0.7rem;
+    }
 }
